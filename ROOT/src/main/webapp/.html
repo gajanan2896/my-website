@@ -1,0 +1,138 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examsquare - Registration</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff022a6;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 450px;
+        }
+
+        h2 {
+            background-color: #a90000;
+            color: white;
+            text-align: center;
+            border-radius: 12px;
+            padding: 12px 20px;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+
+        .input {
+            width: 100%;
+            height: 40px;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #bdbdbd;
+            border-radius: 12px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 48%;
+            padding: 12px;
+            font-size: 18px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #000000;
+            color: white;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555555;
+        }
+
+        input[type="reset"] {
+            background-color: #e0e0e0;
+            color: #333;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #b0b0b0;
+        }
+
+        .form-data {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="registration" method="post">
+            <h2 style="
+    background-color: #efd200;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border: 2px dashed #fff;
+">Examsquare User Registration</h2>
+            <div class="form-data">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" class="input" required="">
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" class="input" required="">
+                
+                <label for="contact">Contact No:</label>
+                <input type="number" id="contact" name="contact" class="input" required="">
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="input" required="">
+                
+                <div class="buttons">
+                    <input type="submit" value="Register" style="
+    background-color: #11df3d;
+    color: white;
+    border: 2px solid #77ff81;
+">
+                    <input type="reset" value="Reset" style="
+    background-color: #ff0000;
+    color: #ffffff;
+    border: 2px solid #f78f8f;
+">
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+</body></html>
